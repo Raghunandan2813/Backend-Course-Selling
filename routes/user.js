@@ -1,5 +1,5 @@
 
-const {Router} = require("express");
+import { Router } from "express";
 const userRouter = Router();
 
 
@@ -18,13 +18,14 @@ userRouter.post("/user/signin", function(req , res){
     res.json({
 
 
-        message: "this is singin endpoint"
+        message: "this is signin endpoint"
     })
 })
 
 
 
 userRouter.get("/user/purchases", function(req ,res){
+
 
 
     res.json({
@@ -35,10 +36,5 @@ userRouter.get("/user/purchases", function(req ,res){
 
 
 
+export default userRouter
 
-
-
-module.exports ={
-    userRouter: userRouter
-
-}
