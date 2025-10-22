@@ -1,12 +1,12 @@
 const express = require("express")
-const mongoose = require("monggose");
+const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const {userRouter} = require("./routes/course")
-const { userCourse } = require("./routes/user");
+const { courseRouter } = require("./routes/user");
 const app= express();
 
 app.use('/user', userRouter)
-app.use('/course', userCourse)
+app.use('/course', courseRouter)
 
 
 createUserRoutes(app);

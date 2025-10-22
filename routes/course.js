@@ -1,8 +1,8 @@
 
 const {Router} = require("express");
-const userCourse = Router();
+const courseRouter = Router();
 
-app.post("/courses/purchases", function(req ,res){
+courseRouter.post("/courses/purchases", function(req ,res){
 
 
     res.json({
@@ -11,7 +11,7 @@ app.post("/courses/purchases", function(req ,res){
 })
 
 
-app.get("/courses/preview", function(req , res){
+courseRouter.get("/courses/preview", function(req , res){
 
 
 })
@@ -19,5 +19,5 @@ app.get("/courses/preview", function(req , res){
 
 
 module.exports={
-    userCourse: this.userCourse
+    courseRouter: courseRouter
 }

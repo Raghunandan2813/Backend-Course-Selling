@@ -2,7 +2,7 @@
 const {Router} = require("express");
 const userRouter = Router();
 
-function createUserRoutes(app){
+
 
 userRouter.post("/user/singup", function(req ,res){
 
@@ -35,7 +35,7 @@ userRouter.get("/user/purchases", function(req ,res){
 
 
 
-}
+
 
 
 module.exports ={
