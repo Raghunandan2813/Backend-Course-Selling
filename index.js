@@ -2,6 +2,7 @@ import express from "express"
 
 import userRouter  from "./routes/user.js";
 import courseRouter from "./routes/course.js";
+import userRouter from "./routes/user.js";
 const app= express();
 
 app.use('/api/v1/user', userRouter)
