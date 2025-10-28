@@ -10,13 +10,18 @@ lastName: String,
 
 
 const adminSchema= Schema({
-
+email: {type: String, unique: true},
+password: String,
+firstName: String,
+lastName: String,
 
 })
 
 
 const courseSchema= Schema({
-
+title: String,
+description:String,
+price: Number,
 
 })
 
